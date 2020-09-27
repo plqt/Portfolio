@@ -1,0 +1,83 @@
+.font1{
+	font-family: "M PLUS Rounded 1c";
+	text-align: center;
+}
+.top{
+	position: relative;
+}
+.top img{
+	width: 100%;
+	height: 100%;
+}
+.text{
+	position: absolute;
+	top: 50px; 
+	left: 380px;
+	max-width: 100%; 
+	max-height: 100%; 
+	padding: 30px;
+	color: rgb(142, 11, 218);
+}
+.sample1 {
+	width:			300px;
+	height:			300px;
+	overflow:		hidden;
+	margin:			10px 8px 10px 16px;
+	position:		relative;	/* 相対位置指定 */
+}
+.sample1 .overlay {/*マスクの文字*/
+	font-size:		130%;
+	text-align: 		center;
+	padding-top:		130px;
+	color:			#fff;
+}
+.sample1 .mask {
+	width:			100%;
+	height:			100%;
+	position:		absolute;	/* 絶対位置指定 */
+	top:			0;
+	left:			0;
+	opacity:		1;	/* マスクを表示しない */
+	background-color:	rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition:	all 0.2s ease;
+	transition:		all 0.2s ease;
+}
+.sample1:hover .mask {
+	opacity:		0;	/* マスクを表示する */
+}
+.header{
+	background: url(./img/header.jpg) center/cover;
+    position: sticky;
+    top: 0;
+}
+.list{
+	width: 1000px;
+	text-align: center;
+    display: -webkit-box;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap:         wrap;
+  }
+.list li{
+	list-style: none; /*リストの点を消す*/
+	display: inline; /*中央揃え*/
+	/*margin: auto;
+	text-align: center;*/
+}
+.list img{
+	width: 300px;
+}
+#layout{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1073px; /*画像を中央揃えにしてる*/
+	text-align: left;
+	font-size: 28px;
+}
+.round img{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+}
